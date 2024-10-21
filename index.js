@@ -24,7 +24,7 @@ renderer.setSize(window.innerWidth, window.innerHeight)
 // Добавляем рендер в документ
 document.body.appendChild(renderer.domElement)
 // Задавляем цвет геометрию
-const geomertry = new TREE.BoxGeometry()
+const geomertry = new TREE.BoxGeometry(1, 1, 1)
 // Выбираем материал
 const material = new TREE.MeshBasicMaterial({
     color: 'orange',
