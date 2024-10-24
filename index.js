@@ -16,14 +16,14 @@ const camera = new TREE.PerspectiveCamera(
 
 // свет
 
-const spot = new TREE.SpotLight(0xffffff, 100)
+const spot = new TREE.SpotLight('red', 100)
 spot.position.set(3, 1, 1)
 scene.add(spot)
 
-// const pointlight = new TREE.PointLight('white', 100, 1000)
-// pointlight.position.set(3, 1, 1)
+const pointlight = new TREE.PointLight('white', 100, 1000)
+pointlight.position.set(3, 1, 1)
 
-// scene.add(pointlight)
+scene.add(pointlight)
 
 // const helper = new TREE.PointLightHelper(pointlight)
 // scene.add(helper)
@@ -75,7 +75,7 @@ cube.position.set(0, 0, 0)
 // Добавляем куб в сцену
 scene.add(cube)
 
-
+//
 
 // const sphereGeometry = new TREE.SphereGeometry(0.5, 6, 6)
 // const sphereMaterial = new TREE.MeshBasicMaterial({
@@ -106,8 +106,8 @@ scene.add(cube)
 function animate() {
     requestAnimationFrame(animate)
 
-    cube.rotation.x += 0.001
-    cube.rotation.y += 0.001
+    cube.rotation.x += 0.01
+    cube.rotation.y += 0.01
 
     renderer.render(scene, camera)
 }
