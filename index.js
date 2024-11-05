@@ -173,7 +173,7 @@ function animate() {
         isHoverd = false
         gsap.to(cube.scale, {
             x: 1,
-            y: 1,
+            y: 2,
             duration: 1.5,
             ease: 'power1.inOut',
         })
